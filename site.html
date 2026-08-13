@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .btnnav{
+            border-radius: 10%;
+            margin-left: 10px;
+            height: 30px;
+            width: 130px;
+            color: rgb(28, 117, 189);
+        }
+
+        .btnnav:hover{
+            background-color: rgb(52, 43, 128);
+            color: rgb(118, 141, 190);
+        }
+
+        .btnfooter{
+            margin-left: 10px;
+            height: 50px;
+            width: 150px;
+            background-color: rgb(52, 76, 107);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            gap: 10px;
+        }
+
+        .btnfooter:hover{
+            background-color: rgb(23, 22, 90);
+            color: rgb(26, 67, 204);
+        }
+        a{
+            text-decoration: none;
+        }
+        .card{
+            border: 1px;
+            color: rgb(7, 7, 7);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            justify-content: center;
+           
+        }
+
+        /* o @media serve para alterar as propriedades das tags com base no tamanho do dispositivo
+        para garantir a responsivisade do site, temos que verificar como fica a estilizaçao
+        em varios tamanhos de telas diferentes, pode ser que no computador fique ok, porem quando acessado
+        pelo celular o site quebre, nesse caso sera necessario aplicar ajuste ajustes no tamanho de tela com 
+        o @media()
+        
+        *usamos o !important para forçar a estilizaçao em uma tag, como a tag pode ter id e varias classes
+        o html e css precisam saber qual estilo aplicar, forçamos isso usando o !important no final dp atributo
+
+
+        */
+        @media(max-width:750px){
+            button{
+                width: 50px!important;
+                height: 30px!important;
+            }
+        }
+        
+                
+        
+    </style>
+</head>
+<body>
+    <!--
+    semantica é a parte linguistica que estuda o significado e sentidos das palavras
+    a partir da versao 5 do html, surgiram as tags semanticas que descrevem o significado
+    das partes do seu site para o navegador e outros desenvolvedores entenderem 
+
+    -->
+<header style="background-color: rgb(27, 57, 155); height: 10vh;display: flex;align-items: center; justify-content: center;"> <!-- cabeçalho da pagina-->
+
+    <nav style="display: flex;align-items: center;">
+        <img src="https://i.pinimg.com/736x/70/f1/dd/70f1dd0b7656918613f61ca6847edd52.jpg" alt="" height="30px" width="50px">
+        <a href="./index.html"><button class="btnnav">Inicio</button></a>
+        <a href="./sobre.html"><button class="btnnav">Sobre nós</button></a>
+        <a href="./trabalhe.html"><button class="btnnav">Trabalhe conosco</button></a>
+    </nav>
+
+</header>
+
+<main style="background-color: black; height: 70vh;"> <!--conteudo principal, é onde irao as informaçoes do site em si-->
+
+<section style="background-color: rgb(55, 64, 190);height: 40%; display: flex;justify-content: center;align-items: center; flex-direction: column;"> <!--section, é uma sessao da pagina aonde voce pode colocar um conteudo 
+    voce pode separar seu site em varias sessoes-->
+    <h1 > CAPITAL.COM </h1>
+    <hr>
+    <br>
+    <p>Treine para ser um voluntario para os jogos! Salve os possiveis tributos de seu distrito.
+        Seja como Katniss e Finnick, proteja quem você ama<3 Cadastre-se no nosso programa em "trabalhe conosco"
+    </p>
+</section>
+
+<section style="background-color: rgb(52, 57, 121); height: 60%; display: flex;">
+
+    <div style="width: 50%; height: 100%;background-color: rgb(130, 209, 255);">
+
+        <div class="card">
+            
+            <img class="imgsection" src="https://i.pinimg.com/736x/e6/c4/bd/e6c4bd0be539fc9e5e849c40718e168d.jpg" alt="" height="50%" width="50%">
+           
+        </div>
+    </div>
+
+    <div style="width: 50%; height: 100%; background-color: rgb(130, 209, 255);">
+               <div class="card">
+            
+            <img class="imgsection" src="https://i.pinimg.com/736x/b1/6e/36/b16e36a2a8d62c058933c2a1983bbe67.jpg" alt="" height="50%" width="50%">
+           
+        </div>
+
+        
+    </div>
+</section>
+
+</main>
+
+
+<footer style="background-color: rgb(66, 115, 179); height: 20vh; display: flex;align-items: center; justify-content: center;">
+    <nav style="display: flex;justify-content: center;align-items: center;">
+        <a href=""><button class="btnfooter">
+             <img width="48" height="48" src="https://img.icons8.com/?size=80&id=BrU2BBoRXiWq&format=png" alt="">instagram</button></a>
+        <a href=""><button class="btnfooter"> 
+            <img width="48" height="48" src="https://img.icons8.com/?size=50&id=118638&format=png" alt="">TikTok</button></a>
+        <a href=""><button class="btnfooter"> 
+            <img width="48" height="48" src="https://img.icons8.com/?size=50&id=6Fsj3rv2DCmG&format=png" alt="">X</button></a>
+
+
+    </nav>
+
+</footer> <!-- footer, é o rodape da pagina'-->
+</body>
+</html>
